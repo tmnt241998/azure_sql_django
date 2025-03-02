@@ -1,7 +1,5 @@
 # azure_sql_django
 
-# django_restAPI_template
-
 Template for Auzre SQL and restAPI in Django Python
 
 ## Set Python environment
