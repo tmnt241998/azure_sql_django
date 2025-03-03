@@ -35,7 +35,7 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 
-## Mac odbc driver
+## Install Mac odbc driver
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -44,7 +44,7 @@ brew update
 HOMEBREW_ACCEPT_EULA=Y brew install msodbcsql18 mssql-tools18
 ```
 
-## Window odbc driver
+## Install Window odbc driver
 
 ```
 msiexec /i msodbcsql.msi ADDLOCAL=ALL
