@@ -4,9 +4,16 @@ Template for Auzre SQL and restAPI in Django Python
 
 ## Set Python environment
 
+For Mac/ Linux
 ```
-python3 -m venv .venv  # Create a virtual environment named .venv
-source .venv/bin/activate  # Activate the virtual environment
+python3 -m venv .venv  
+source .venv/bin/activate 
+```
+
+For Windows
+```
+python3 -m venv .venv  
+.venv\Scripts\activate
 ```
 
 ## Check current Python path
