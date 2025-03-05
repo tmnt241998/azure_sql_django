@@ -22,10 +22,19 @@ pip install -r requirements.txt
 ```
 
 ## Generate database migration files
+In Django, migrations are a way to propagate changes made to your models (database schema) into the actual database.
 
+When you run:
 ```
 python3 manage.py makemigrations
 ```
+
+Django will:
+1. Scans the models.py file in your Django app.
+2. Detects changes (like adding a new model, modifying a field, etc.).
+3. Generates a migration file inside the migrations/ directory of your app.
+4. The migration file contains instructions (SQL-like operations) that Django will use to update the database.
+   
 ## Apply migrations to the database
 
 ```
@@ -48,7 +57,9 @@ HOMEBREW_ACCEPT_EULA=Y brew install msodbcsql18 mssql-tools18
 
 ## Install Window odbc driver
 [Download ODBC Driver for SQL Server](https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)  
+
 or
+
 ```
 msiexec /i msodbcsql.msi ADDLOCAL=ALL
 ```
